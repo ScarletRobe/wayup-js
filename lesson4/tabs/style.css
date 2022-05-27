@@ -1,0 +1,66 @@
+.tabs {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(131, 126, 126);
+    width: 30vw;
+    margin: 0 auto;
+}
+
+.tabs__content {
+    display: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+}
+
+.tabs__content.active {
+    display: block;
+}
+
+.tabs__buttons {
+    display: flex;
+    border-bottom: 1px solid rgb(131, 126, 126);
+}
+
+.tabs__btn {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    width: 10vw;
+    height: 25px;
+    transition: background-color 0.5s;
+    
+}
+
+.tabs__item:hover .tabs__btn{
+    background-color: rgb(201, 201, 201);
+}
+
+.tabs__item .tabs__btn.active {
+    background-color: rgb(150, 150, 150);
+}
+
+.tabs__dropdown {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.tabs__item .tabs__dropdown .dropdown__button {
+    background-color: white;
+    width: 5vw;
+}
+
+.tabs__item:hover .tabs__dropdown {
+    display: flex;
+}
+
+.tabs__item .tabs__dropdown .dropdown__button:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.tabs__item .tabs__dropdown .dropdown__button.active {
+    background-color: rgb(235, 235, 235);
+}
